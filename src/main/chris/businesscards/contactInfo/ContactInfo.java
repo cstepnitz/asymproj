@@ -1,7 +1,7 @@
-package chris.businesscards;
+package chris.businesscards.contactInfo;
 
 /**
- * Holds contact information.
+ * Holds contact information from a business card.
  * 
  * @author Chris
  *

@@ -1,4 +1,6 @@
-package chris.businesscards;
+package chris.businesscards.parser;
+
+import chris.businesscards.contactInfo.ContactInfo;
 
 /**
  * Parses a single Business Card document as a string and return the ContactInfo
