@@ -25,16 +25,23 @@ public class Main {
 	
 	
 	/**
-	 * Runs the OCR application.  
+	 * Runs the OCR application.  Checks the arguments, reads the input file, prints out the output to screen.  
 	 * @param args
 	 */
 	public void run(String[] args) {
 		try {			
+			
 			if(args.length != 1)
 				printErrorExit("This program expects one argument--the file path of the input file.");
-		
+			else {
+				if(args[0] == null)
+					printErrorExit("This program expects one argument--the file path of the input file.");
+				
+			}
+			
+			
 		}catch(Throwable t) {
-			printErrorExit("Unexpected runtime error.", t);
+			printError("Unexpected runtime error.", t);
 		}
 	}
 	
@@ -43,7 +50,7 @@ public class Main {
 	 * @param message  An informative error
 	 */
 	private void printErrorExit(String message) {
-		printErrorExit(message, null);
+		printError(message, null);
 	}
 
 	/**
@@ -51,7 +58,7 @@ public class Main {
 	 * @param message An informative error
 	 * @param t a throwable.  May be null
 	 */
-	private void printErrorExit(String message, Throwable t) {
+	private void printError(String message, Throwable t) {
 		System.err.println("FATAL ERROR: " + message);
 		if(t != null)
 			t.printStackTrace(System.err);
