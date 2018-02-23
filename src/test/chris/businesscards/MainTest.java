@@ -29,10 +29,9 @@ public class MainTest {
 		new Main().run(new String[] {"classpath:mikeSmith.txt"}, outStream);
 		outStream.close();
 		String content = new String(outBytes.toByteArray(), StandardCharsets.UTF_8);
-
-		// TODO verify content once we have content parser in place
-		
-		
+		assertTrue(content.contains("Name: Mike Smith"));
+		assertTrue(content.contains("Phone: 4105551234"));
+		assertTrue(content.contains("Email: msmith@asymmetrik.com"));		
 	}
 	
 	

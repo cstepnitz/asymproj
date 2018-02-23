@@ -1,11 +1,7 @@
 package chris.businesscards;
 
-import java.io.File;
 import java.io.IOException;
 import java.io.PrintStream;
-import java.nio.charset.Charset;
-
-import org.apache.commons.io.FileUtils;
 
 import chris.businesscards.contactInfo.ContactInfo;
 import chris.businesscards.contactInfo.ContactInfoFormatter;

@@ -9,6 +9,7 @@ import static chris.businesscards.util.Utils.*;
  */
 public class ContactInfoImpl implements ContactInfo{
 
+	public static final ContactInfoImpl EMPTY = new ContactInfoImpl(null, null, null);
 	private final String name;
 	private final String phoneNumber;
 	private final String emailAddress;
