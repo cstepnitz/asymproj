@@ -6,7 +6,9 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>asymproj</name>
 	<description>Project Demonstrating Skills</description>
-	<properties></properties>
+	<properties>
+	 	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
 	<build>
 		<sourceDirectory>src/main</sourceDirectory>
 		<testSourceDirectory>src/test</testSourceDirectory>
