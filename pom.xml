@@ -7,7 +7,7 @@
 	<name>asymproj</name>
 	<description>Project Demonstrating Skills</description>
 	<properties>
-	 	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<build>
 		<sourceDirectory>src/main</sourceDirectory>
@@ -22,6 +22,7 @@
 				</configuration>
 			</plugin>
 
+		
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-shade-plugin</artifactId>
